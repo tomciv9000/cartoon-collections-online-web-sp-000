@@ -7,17 +7,11 @@ def summon_captain_planet(calls_array)
 end
 
 def long_planeteer_calls(long_calls_array)
-  if long_calls_array.find{ |call| call.length > 4}
-    return true 
-  else
-    false
-  end
+  long_calls_array.any?{|call| call.length > 4}
 end
 
 def find_the_cheese(string_array)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  string_array.find do |item|
-    cheese_types.include?(item)
-  end
+  string_array.find {|item| cheese_types.include?(item)}
 end

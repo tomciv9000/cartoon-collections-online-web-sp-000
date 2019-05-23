@@ -8,7 +8,6 @@ end
 
 def long_planeteer_calls(long_calls_array)
   long_calls_array.any?{|call| call.length > 4}
-  end
 end
 
 def find_the_cheese(string_array)
